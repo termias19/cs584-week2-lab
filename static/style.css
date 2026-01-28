@@ -385,3 +385,115 @@ footer {
         text-align: center;
     }
 }
+.form-section {
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+.feedback-section {
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+.feedback-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feedback-section p {
+    color: #555;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.feedback-card.good { border-left-color: #1a7f37; }
+.feedback-card.warn { border-left-color: #b54708; }
+.feedback-card.bad  { border-left-color: #d1242f; }
+.feedback-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.feedback-card.good:hover {
+    box-shadow: 0 12px 30px rgba(26, 127, 55, 0.25);
+}
+
+.feedback-card.warn:hover {
+    box-shadow: 0 12px 30px rgba(181, 71, 8, 0.25);
+}
+
+.feedback-card.bad:hover {
+    box-shadow: 0 12px 30px rgba(209, 36, 47, 0.25);
+}
+.form-group input {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:hover {
+    border-color: #b3b7ff;
+}
+
+.form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+.submit-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+.feedback-card {
+    animation: fadeUp 0.4s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
