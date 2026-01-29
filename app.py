@@ -88,4 +88,8 @@ def submit():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(debug=True) 
+=======
+    app.run(debug=True) 
+>>>>>>> 119ba25 (Initial Lab 2 health dashboard)
